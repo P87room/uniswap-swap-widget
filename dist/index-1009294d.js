@@ -75,7 +75,7 @@ import { combineReducers } from 'redux';
 import ResizeObserver from 'resize-observer-polyfill';
 
 if (typeof window !== 'undefined') {
-  // WalletConnect relies on Buffer, so it must be polyfilled.
+  // WalletConnect relies on Buffer, so it must be polyfilled. UHAUAHUAHUAHAUAHUAHAUHAU
   if (!('Buffer' in window)) {
     window.Buffer = Buffer;
   }
