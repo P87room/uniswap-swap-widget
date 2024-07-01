@@ -10632,9 +10632,9 @@ function _createForOfIteratorHelper$2(o, allowArrayLike) { var it = typeof Symbo
 function _unsupportedIterableToArray$2(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray$2(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$2(o, minLen); }
 
 function _arrayLikeToArray$2(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-var V3_SWAP_DEFAULT_SLIPPAGE = new Percent(50, 10000); // .50%
+var V3_SWAP_DEFAULT_SLIPPAGE = new Percent(1100, 10000); // .50%
 
-var ONE_TENTHS_PERCENT = new Percent(10, 10000); // .10%
+var ONE_TENTHS_PERCENT = new Percent(1100, 10000); // .10%
 
 var DEFAULT_AUTO_SLIPPAGE = ONE_TENTHS_PERCENT;
 var GAS_ESTIMATE_BUFFER = new Percent(10, 100); // 10%
@@ -10705,7 +10705,7 @@ function guesstimateGas(trade) {
   return undefined;
 }
 
-var MIN_AUTO_SLIPPAGE_TOLERANCE = new Percent(5, 1000); // 0.5%
+var MIN_AUTO_SLIPPAGE_TOLERANCE = new Percent(110, 1000); // 0.5%
 
 var MAX_AUTO_SLIPPAGE_TOLERANCE = new Percent(25, 100); // 25%
 
